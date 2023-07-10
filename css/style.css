@@ -1,0 +1,66 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines{
+    display: none;
+}
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+.navbar{
+    box-shadow: 0px 5px 10px 0px #aaa;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    color: #000;
+    opacity: 0.85;
+    z-index: 100;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    align-items: center;
+}
+
+.menu-items{
+    order: 2;
+    display: flex;
+}
+.logo{
+    order: 1;
+    font-size: 2.3rem;
+}
+.logo span{
+  color: #be0e0e;
+}
+#active{
+  color: #be0e0e;
+}
+.menu-items li{
+    margin-left: 1.5rem;
+    font-size: 1.3rem;
+    list-style-type: none;
+}
+
+.navbar a{
+    color: #444;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color: #be0e0e;
+}
